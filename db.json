@@ -1,0 +1,114 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Admin",
+      "sobrenome": "Sistema",
+      "cpf": "12345678900",
+      "email": "admin@aluguel.com",
+      "senha": "admin123",
+      "rua": "Rua Principal, 123",
+      "cep": "01234567",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "telefone": "11999999999",
+      "isAdmin": true
+    },
+    {
+      "nome": "Hiroshy",
+      "sobrenome": "Ogata Lima",
+      "cpf": "49107517858",
+      "email": "hiroshyogata@gmail.com",
+      "senha": "dsadsda",
+      "rua": "rua de teste 123",
+      "cep": "08411120",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "telefone": "1100000000",
+      "isAdmin": false,
+      "id": "2"
+    },
+    {
+      "id": "b7ff",
+      "nome": "USUARIO TESTE",
+      "sobrenome": "TESTE",
+      "cpf": "12345678910",
+      "email": "teste@gmail.com",
+      "senha": "SDMKDSKAM",
+      "rua": "RUA DOS AZULEJOS 123",
+      "cep": "00000000",
+      "cidade": "mogi das cruzes",
+      "estado": "SP",
+      "telefone": "1112345678",
+      "isAdmin": false
+    },
+    {
+      "nome": "Professor BRUNO",
+      "sobrenome": "MESSIAS AGUIAR",
+      "cpf": "45612378900",
+      "email": "bruno@umc.br",
+      "rua": "Rua em Sao Miguel",
+      "cep": "11111111111",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "telefone": "1100000000",
+      "id": "7ab0"
+    },
+    {
+      "id": "db94",
+      "nome": "DANILO",
+      "sobrenome": "GUILHERME",
+      "cpf": "45678912300",
+      "email": "danilo@umc.br",
+      "senha": "danilo123",
+      "rua": "Rua em Suzano",
+      "cep": "12345678",
+      "cidade": "Suzano",
+      "estado": "SP",
+      "telefone": "1111111111",
+      "isAdmin": false
+    }
+  ],
+  "veiculos": [
+    {
+      "id": "1",
+      "marca": "Toyota",
+      "modelo": "Corolla",
+      "ano": 2023,
+      "preco": 150,
+      "categoria": "Sedan",
+      "disponivel": true,
+      "imagem": "https://via.placeholder.com/300x200/4A90E2/FFFFFF?text=Toyota+Corolla"
+    },
+    {
+      "id": "2",
+      "marca": "Honda",
+      "modelo": "Civic",
+      "ano": 2023,
+      "preco": 140,
+      "categoria": "Sedan",
+      "disponivel": true,
+      "imagem": "https://via.placeholder.com/300x200/E74C3C/FFFFFF?text=Honda+Civic"
+    },
+    {
+      "id": "3",
+      "marca": "Volkswagen",
+      "modelo": "Golf",
+      "ano": 2023,
+      "preco": 130,
+      "categoria": "Hatch",
+      "disponivel": true,
+      "imagem": "https://via.placeholder.com/300x200/27AE60/FFFFFF?text=Volkswagen+Golf"
+    },
+    {
+      "id": "4",
+      "marca": "Ford",
+      "modelo": "Mustang",
+      "ano": 2023,
+      "preco": 300,
+      "categoria": "Esportivo",
+      "disponivel": false,
+      "imagem": "https://via.placeholder.com/300x200/E67E22/FFFFFF?text=Ford+Mustang"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração - DH VEICULOS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">🚗 DH VEICULOS</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="localizacao.html">Lojas</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="admin-container">
+            <h2>Administração de Usuários</h2>
+            
+            <div class="admin-actions">
+                <div class="search-box">
+                    <input type="number" id="searchInput" placeholder="Buscar usuário por ID">
+                    <button onclick="buscarUsuario()" class="btn-secondary">Buscar</button>
+                    <button onclick="carregarUsuarios()" class="btn-secondary">Mostrar Todos</button>
+                </div>
+                <a href="cadastro.html" class="btn-primary">Novo Cadastro</a>
+            </div>
+
+            <div class="users-table-container">
+                <table class="users-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>CPF</th>
+                            <th>Cidade/UF</th>
+                            <th>Admin</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="usersTableBody">
+                        <!-- Carregado via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Modal para visualizar/editar usuário -->
+            <div id="userModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3 id="modalTitle">Detalhes do Usuário</h3>
+                    <form id="userForm">
+                        <input type="hidden" id="editId">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="editNome">Nome</label>
+                                <input type="text" id="editNome" name="nome" required disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="editSobrenome">Sobrenome</label>
+                                <input type="text" id="editSobrenome" name="sobrenome" required disabled>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="editCpf">CPF</label>
+                            <input type="text" id="editCpf" name="cpf" required disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="editEmail">Email</label>
+                            <input type="email" id="editEmail" name="email" required disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="editRua">Rua</label>
+                            <input type="text" id="editRua" name="rua" required disabled>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="editCep">CEP</label>
+                                <input type="text" id="editCep" name="cep" required disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="editCidade">Cidade</label>
+                                <input type="text" id="editCidade" name="cidade" required disabled>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="editEstado">Estado</label>
+                                <input type="text" id="editEstado" name="estado" required disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="editTelefone">Telefone</label>
+                                <input type="text" id="editTelefone" name="telefone" required disabled>
+                            </div>
+                        </div>
+                        <div class="modal-actions">
+                            <button type="button" id="btnSalvar" class="btn-primary" style="display: none;">Salvar Alterações</button>
+                            <button type="button" id="btnEditar" class="btn-secondary">Editar Usuário</button>
+                            <button type="button" id="btnExcluir" class="btn-danger">Excluir Usuário</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 DH VEICULOS - Aluguel de Veículos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "aluguel-veiculos",
+  "version": "1.0.0",
+  "description": "Sistema de aluguel de veículos",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "json-server db.json --port 3000 --watch"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}
